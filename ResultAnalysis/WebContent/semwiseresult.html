@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body bgcolor="Thistle">
+<br><br><br><br><br><br>
+<form name="getresult" method="post" action="./jsp/semwiseresult.jsp" onSubmit="return validate();">
+<table cellspacing="25px" align="center">
+<caption><u style=" font-size:25px; color:blue;">Semister wise Results</u><br></br></caption>
+<tr><th align="left">Roll Number:</th><td><input type="text" name="rno"></td></tr>
+<tr><th align="left">Semister:</th>
+    <td>
+   			<select name="sem" >
+				<option selected></option>
+				<option >1</option>
+				<option >2-1</option>
+				<option >2-2</option>
+				<option >3-1</option>
+				<option >3-2</option>
+				<option >4-1</option>
+				<option >4-2</option>
+			</select>
+	</td>
+ </tr>
+<tr><th align="left">Year:</th><td>
+<select name="year" >
+				<option selected></option>
+				<option >2008</option>
+				<option >2009</option>
+				<option >2010</option>
+				<option >2011</option>
+				<option >2012</option>
+				<option >2013</option>
+				<option >2014</option>
+</select>
+</td></tr>
+<tr><td></td><td><br><input type="Submit" value="Submit" name="getresult"></td></tr>
+</table>
+</form>
+</body>
+</html>

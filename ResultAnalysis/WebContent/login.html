@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>login Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script language="javascript">
+function validate()
+{
+	with(document.login)
+	{
+		if(loginid.value=="")
+		{
+			alert("Please enter Login ID");
+			return false;
+		}
+		if(password.value=="")
+		{
+			alert("Please enter Password");
+			return false;
+		}
+		return true;  
+	}	
+}
+  </script>
+ </head>
+<body bgcolor="#900000" text="white" >
+<h4 align="center"><img border="0" src="C:\images\vnr.jpg" alt="Pulpit rock" width="950" height="120" /></h4>
+<br/><br/>
+<h2 align="center" style="font-family : Monotypecorsiva; color: white; font-size:30px"><u>RESULT ANALYSIS</u></h2>
+<br/>
+<h3 align="center">Login Page</h3>
+<form name="login" method="post" action="./jsp/login.jsp" onSubmit="return validate();">
+    <table align="center" cellspacing="25px">
+    <tr><th>Login ID:</th><td><input type="text" name="loginid" /></td></tr>
+	<tr><th>Password:</th><td><input type="password" name="password" /></td></tr>
+	<tr><td colspan="2" align="center"><input type="submit" value="login" name="submit" /></td></tr>
+	</table>
+</form>  
+</body>
+</html>
